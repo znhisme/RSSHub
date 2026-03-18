@@ -2048,7 +2048,16 @@
         "title": "Unknown",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
-          "/portal/list/index.html?id=6",
+          "/portal/list/index.html?id=6"
+        ],
+        "target": "/50forum/"
+      }
+    ],
+    ".": [
+      {
+        "title": "Unknown",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
           "/"
         ],
         "target": "/50forum/"
@@ -2845,12 +2854,13 @@
     "_name": "8KCosplay",
     ".": [
       {
-        "title": "Unknown",
+        "title": "分类",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
-          "/"
+          "/category/:mainCategory/:cat/",
+          "/category/:cat/"
         ],
-        "target": "/8kcos/cat/:cat{.+}?"
+        "target": "/8kcos/cat/:cat"
       },
       {
         "title": "最新",
@@ -5782,6 +5792,19 @@
       }
     ]
   },
+  "aschmelyun.com": {
+    "_name": "Andrew Schmelyun",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/aschmelyun/blog"
+      }
+    ]
+  },
   "asiafruitchina.net": {
     "_name": "亚洲水果",
     ".": [
@@ -7428,7 +7451,6 @@
         "title": "热搜",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/",
           "/"
         ],
         "target": "/bilibili/hot-search"
@@ -7440,6 +7462,16 @@
           "/v/popular/rank/:rid"
         ],
         "target": "/bilibili/ranking/:rid"
+      }
+    ],
+    "m": [
+      {
+        "title": "热搜",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/"
+        ],
+        "target": "/bilibili/hot-search"
       }
     ],
     "live": [
@@ -7797,8 +7829,26 @@
         "title": "暴雪游戏国服新闻",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
-          "/",
-          "/",
+          "/"
+        ],
+        "target": "/blizzard/news-cn/"
+      }
+    ],
+    "wow": [
+      {
+        "title": "暴雪游戏国服新闻",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/blizzard/news-cn/"
+      }
+    ],
+    "hs": [
+      {
+        "title": "暴雪游戏国服新闻",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
           "/"
         ],
         "target": "/blizzard/news-cn/"
@@ -8583,6 +8633,15 @@
         "title": "News by Department",
         "docs": "https://docs.rsshub.app/routes/government",
         "source": [
+          "/:lang/innovation-science-economic-development/news/*",
+          "/:lang/innovation-sciences-developpement-economique/nouvelles/*"
+        ],
+        "target": "/canada.ca/news/:lang/departmentofindustry"
+      },
+      {
+        "title": "News by Department",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
           "/:lang/news/advanced-news-search/news-results.html",
           "/:lang/nouvelles/recherche-avancee-de-nouvelles/resultats-de-nouvelles.html"
         ],
@@ -8595,9 +8654,7 @@
         "docs": "https://docs.rsshub.app/routes/government",
         "source": [
           "/site/ised/:lang",
-          "/site/isde/:lang",
-          "/:lang/innovation-science-economic-development/news/*",
-          "/:lang/innovation-sciences-developpement-economique/nouvelles/*"
+          "/site/isde/:lang"
         ],
         "target": "/canada.ca/news/:lang/departmentofindustry"
       }
@@ -11727,6 +11784,29 @@
       }
     ]
   },
+  "claude.com": {
+    "_name": "Claude",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/claude/blog"
+      }
+    ],
+    "code": [
+      {
+        "title": "Code Changelog",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/docs/en/changelog"
+        ],
+        "target": "/claude/code/changelog"
+      }
+    ]
+  },
   "cline.bot": {
     "_name": "cline",
     ".": [
@@ -12476,9 +12556,10 @@
         "title": "Blog",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
-          "/blog/1"
+          "/blog/1",
+          "/blog/:category/1"
         ],
-        "target": "/cognition/blog"
+        "target": "/cognition/blog/:category?"
       }
     ]
   },
@@ -12560,6 +12641,19 @@
           "/manga/:id"
         ],
         "target": "/comic-fuz/manga/:id"
+      }
+    ]
+  },
+  "comic-walker.com": {
+    "_name": "カドコミ(Kadocomi)",
+    ".": [
+      {
+        "title": "漫画详情",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/comic-walker/manga/:id"
       }
     ]
   },
@@ -14862,7 +14956,16 @@
         "title": "用户动态",
         "docs": "https://docs.rsshub.app/routes/shopping",
         "source": [
-          "/member/:id",
+          "/member/:id"
+        ],
+        "target": "/dianping/dianping/user/:id"
+      }
+    ],
+    "m": [
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
           "/userprofile/:id"
         ],
         "target": "/dianping/dianping/user/:id"
@@ -17982,6 +18085,23 @@
           "/topics/:id"
         ],
         "target": "/gcores/gcores/topics/:id/recommend"
+      },
+      {
+        "title": "用户播客",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/users/:id/content",
+          "/users/:id"
+        ],
+        "target": "/gcores/users/:id/radios"
+      },
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/users/:id/talks"
+        ],
+        "target": "/gcores/users/:id/talks"
       },
       {
         "title": "视频",
@@ -24272,6 +24392,126 @@
         "target": "/ielts/"
       }
     ],
+    "gaokao": [
+      {
+        "title": "普通高考动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/gaokao"
+      }
+    ],
+    "chengkao": [
+      {
+        "title": "成人高考动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/chengkao"
+      }
+    ],
+    "yankao": [
+      {
+        "title": "研究生考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/yankao"
+      }
+    ],
+    "zikao": [
+      {
+        "title": "自学考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/zikao"
+      }
+    ],
+    "ntce": [
+      {
+        "title": "中小学教师资格考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/ntce"
+      }
+    ],
+    "tdxl": [
+      {
+        "title": "同等学力申请硕士学位考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/tdxl"
+      }
+    ],
+    "cet": [
+      {
+        "title": "全国四六级考试（CET）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/cet"
+      }
+    ],
+    "ncre": [
+      {
+        "title": "全国计算机等级考试（NCRE）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/ncre"
+      }
+    ],
+    "nit": [
+      {
+        "title": "全国计算机应用水平考试（NIT）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/nit"
+      }
+    ],
+    "pets": [
+      {
+        "title": "全国英语等级考试（PETS）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/pets"
+      }
+    ],
+    "wsk": [
+      {
+        "title": "全国外语水平考试（WSK）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/wsk"
+      }
+    ],
+    "ccpt": [
+      {
+        "title": "书画等级考试（CCPT）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/neea/local/ccpt"
+      }
+    ],
     "jlpt": [
       {
         "title": "日本语能力测试 JLPT 通知",
@@ -24524,6 +24764,19 @@
           "/"
         ],
         "target": "/imop/tianshu"
+      }
+    ]
+  },
+  "inceptionlabs.ai": {
+    "_name": "Inception Labs",
+    "www": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/inceptionlabs/blog"
       }
     ]
   },
@@ -25870,6 +26123,32 @@
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/u/:uid"
+        ],
+        "target": "/jike/user/:uid"
+      }
+    ],
+    "m": [
+      {
+        "title": "圈子 - 纯文字",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/topics/:id"
+        ],
+        "target": "/jike/topic/text/:id"
+      },
+      {
+        "title": "圈子",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/topics/:id"
+        ],
+        "target": "/jike/topic/:id"
+      },
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/users/:uid"
         ],
         "target": "/jike/user/:uid"
       }
@@ -27497,7 +27776,16 @@
         "title": "首页资讯",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/",
+          "/"
+        ],
+        "target": "/jumeili/home/:column?"
+      }
+    ],
+    ".": [
+      {
+        "title": "首页资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
           "/"
         ],
         "target": "/jumeili/home/:column?"
@@ -27759,7 +28047,6 @@
         "title": "Popular Recent Posts",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
-          "/post",
           "/post"
         ],
         "target": "/konachan/post/popular_recent/:period?"
@@ -27768,7 +28055,27 @@
         "title": "Popular Recent Posts",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
-          "/post",
+          "/post"
+        ],
+        "target": "/konachan/sfw/post/popular_recent/:period?"
+      }
+    ]
+  },
+  "konachan.net": {
+    "_name": "Konachan.com Anime Wallpapers",
+    ".": [
+      {
+        "title": "Popular Recent Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/post"
+        ],
+        "target": "/konachan/post/popular_recent/:period?"
+      },
+      {
+        "title": "Popular Recent Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
           "/post"
         ],
         "target": "/konachan/sfw/post/popular_recent/:period?"
@@ -31897,6 +32204,19 @@
       }
     ]
   },
+  "meritalk.com": {
+    "_name": "MeriTalk",
+    ".": [
+      {
+        "title": "Latest Articles",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/articles/"
+        ],
+        "target": "/meritalk/articles"
+      }
+    ]
+  },
   "meta.com": {
     "_name": "Meta",
     "ai": [
@@ -33345,8 +33665,7 @@
         "title": "教务通知",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/",
-          "/jwtz/index.htm"
+          "/"
         ],
         "target": "/ncu/jwc"
       }
@@ -33399,7 +33718,6 @@
         "title": "普通高考动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/gaokao"
@@ -33410,7 +33728,6 @@
         "title": "成人高考动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/chengkao"
@@ -33421,7 +33738,6 @@
         "title": "研究生考试动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/yankao"
@@ -33432,7 +33748,6 @@
         "title": "自学考试动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/zikao"
@@ -33443,7 +33758,6 @@
         "title": "中小学教师资格考试动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/ntce"
@@ -33454,7 +33768,6 @@
         "title": "同等学力申请硕士学位考试动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/tdxl"
@@ -33465,7 +33778,6 @@
         "title": "全国四六级考试（CET）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/cet"
@@ -33476,7 +33788,6 @@
         "title": "全国计算机等级考试（NCRE）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/ncre"
@@ -33487,7 +33798,6 @@
         "title": "全国计算机应用水平考试（NIT）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/nit"
@@ -33498,7 +33808,6 @@
         "title": "全国英语等级考试（PETS）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/pets"
@@ -33509,7 +33818,6 @@
         "title": "全国外语水平考试（WSK）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/wsk"
@@ -33520,7 +33828,6 @@
         "title": "书画等级考试（CCPT）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
-          "/",
           "/"
         ],
         "target": "/neea/local/ccpt"
@@ -33547,7 +33854,16 @@
         "title": "Newsroom",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/:region/newsroom",
+          "/:region/newsroom"
+        ],
+        "target": "/netflix/newsroom/:category?/:region?"
+      }
+    ],
+    ".": [
+      {
+        "title": "Newsroom",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
           "/"
         ],
         "target": "/netflix/newsroom/:category?/:region?"
@@ -36381,8 +36697,7 @@
         "title": "深度",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/",
-          "/zh/profundity/index.html"
+          "/"
         ],
         "target": "/panewslab/profundity/:category?"
       },
@@ -36393,6 +36708,16 @@
           "/"
         ],
         "target": "/panewslab/topic/:id"
+      }
+    ],
+    "www": [
+      {
+        "title": "深度",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/zh/profundity/index.html"
+        ],
+        "target": "/panewslab/profundity/:category?"
       }
     ]
   },
@@ -39575,6 +39900,24 @@
         "target": "/qq/lol/news/28"
       }
     ],
+    "news": [
+      {
+        "title": "用户主页列表",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/omn/author/:uid"
+        ],
+        "target": "/qq/qq/news/:uid"
+      },
+      {
+        "title": "当前作者文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/omn/author/:mid"
+        ],
+        "target": "/tencent/news/author/:mid"
+      }
+    ],
     "pd": [
       {
         "title": "腾讯频道",
@@ -39583,16 +39926,6 @@
           "/"
         ],
         "target": "/qq/pd/guild/:id/:sub?/:sort?"
-      }
-    ],
-    "news": [
-      {
-        "title": "当前作者文章",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/omn/author/:mid"
-        ],
-        "target": "/tencent/news/author/:mid"
       }
     ],
     "new": [
@@ -45072,7 +45405,7 @@
     ]
   },
   "theinitium.com": {
-    "_name": "端传媒",
+    "_name": "The Initium",
     "app": [
       {
         "title": "App",
@@ -45093,26 +45426,26 @@
         "target": "/theinitium/author/:type"
       },
       {
-        "title": "专题・栏目",
+        "title": "栏目",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/channel/:type"
+          "/latest/"
         ],
-        "target": "/theinitium/channel/:type"
+        "target": "/theinitium/channel/latest"
       },
       {
-        "title": "作者",
+        "title": "栏目",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/author/:type"
+          "/tag/:type"
         ],
-        "target": "/theinitium/author/:type"
+        "target": "/theinitium/channel/:type"
       },
       {
         "title": "话题・标签",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/tags/:type"
+          "/tag/:type"
         ],
         "target": "/theinitium/tags/:type"
       }
